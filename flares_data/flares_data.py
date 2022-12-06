@@ -21,6 +21,7 @@ def read_distribution_function(df_name):
     return Table.read(f'{data_dir}distribution_functions/{df_name}.ecsv')
 
 
-# class distribution_function:
-#
-#     def __init__(self, ):
+def read_scaling_relation(sr_name):
+    """ simply read a scaling relation table and return it """
+
+    return Table.read(f'{data_dir}scaling_relations/{sr_name}.ecsv')
